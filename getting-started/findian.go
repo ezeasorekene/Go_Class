@@ -8,13 +8,16 @@ import (
 )
 
 
-/**
-This function get a word/sentence as an input
+/***
+@Author: github.com/ezeasorekene
+@Title: Experimenting Strings Manipulation
+@Description:
+This function gets a word/sentence as an input
 and searches the word i, a and n in the word/sentence
 If the word/sentence start with i, contains a and
 ends with n, then the program will print "Found!" otherwise
 it will print "Not Found!"
-**/
+***/
 func main() {
    var input string
    fmt.Printf("Enter a word/sentence that starts with i, ends with n and contains a: \n")

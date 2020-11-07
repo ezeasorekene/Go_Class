@@ -3,22 +3,93 @@ package main
 import (
 	"fmt"
 //	"strings"
+	"net/http"
 )
 
+
 func main()  {
-	// var i,v int
-	// var a [5]int
-	// var b [5]int = [5]{1,2,3,4,5}
-	c := [...]int{5,7,3,4,5}
-	// a[1] = 456
-	// fmt.Println(a[1],a[2],a[3],a[4],"P")
-	// s1 := c[1:3]
-	s2 := c[2:5]
-	for i,v := range s2 {
-		fmt.Printf("Index -> %d, Value -> %d \n", i, v)
-	}
-	fmt.Println(len(s2), cap(s2))
+	_, x := http.Get("www.uci.edu")
+	fmt.Println(x)
 }
+
+// func main() {
+//   s := make([]int, 0, 3)
+//   s = append(s, 100)
+//   fmt.Println(len(s), cap(s))
+// }
+
+// type P struct {
+//     x string
+// y int
+// }
+// func main() {
+//   b := P{"x", -1}
+//   a := [...]P{P{"a", 10},
+//         P{"b", 2},
+//         P{"c", 3}}
+//   for _, z := range a {
+//     if z.y > b.y {
+//       b = z
+//     }
+//   }
+//   fmt.Println(b.x)
+// }
+
+// func main() {
+//   x := map[string]int {
+//     "ian": 1, "harris": 2}
+//   for i, j := range x {
+//     if i == "harris" {
+//       fmt.Print(i, j)
+//     }
+//   }
+// }
+
+
+// func main() {
+//   x := [...]int {1, 2, 3, 4, 5}
+//   y := x[0:2]
+//   z := x[1:4]
+//   fmt.Print(len(y), cap(y), len(z), cap(z))
+// }
+
+
+// func main() {
+//   x := [...]int {4, 8, 5}
+//   y := x[0:2]
+//   z := x[1:3]
+//   y[0] = 1
+//   z[1] = 3
+//   fmt.Print(x)
+// }
+
+
+// func main() {
+//   x := []int {4, 8, 5}
+//   y := -1
+//   for _, elt := range x {
+//     if elt > y {
+//       y = elt
+//     }
+//   }
+//   fmt.Print(y)
+// }
+
+
+// func main()  {
+// 	// var i,v int
+// 	// var a [5]int
+// 	// var b [5]int = [5]{1,2,3,4,5}
+// 	c := [...]int{5,7,3,4,5}
+// 	// a[1] = 456
+// 	// fmt.Println(a[1],a[2],a[3],a[4],"P")
+// 	// s1 := c[1:3]
+// 	s2 := c[2:5]
+// 	for i,v := range s2 {
+// 		fmt.Printf("Index -> %d, Value -> %d \n", i, v)
+// 	}
+// 	fmt.Println(len(s2), cap(s2))
+// }
 
 
 

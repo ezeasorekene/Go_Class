@@ -7,15 +7,15 @@ import (
   "strings"
 	"os"
 )
-/*
-* @Author: github.com/ezeasorekene
-* @Title: Experimenting Go Map and JSON Marshal()
-* @Description
-* This program prompts the user to first enter a name, and then enter an address.
-* The program creates a map and adds the name and address to the map using the keys
-* “name” and “address”, respectively. The program uses Marshal() to create a JSON object
-* from the map, and then prints the JSON object.
-*/
+/***
+@Author: github.com/ezeasorekene
+@Title: Experimenting Go Map and JSON Marshal()
+@Description:
+This program prompts the user to first enter a name, and then enter an address.
+The program creates a map and adds the name and address to the map using the keys
+“name” and “address”, respectively. The program uses Marshal() to create a JSON object
+from the map, and then prints the JSON object.
+***/
 
 // type BioData struct {
 //   name string
