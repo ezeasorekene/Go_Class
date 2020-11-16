@@ -1,16 +1,43 @@
 package main
 
-import (
-	"fmt"
-//	"strings"
-	"net/http"
-)
+import "fmt"
 
-
-func main()  {
-	_, x := http.Get("www.uci.edu")
-	fmt.Println(x)
+type GiveAway struct {
+    loud		string
+		louder	string
+    loudest	string
 }
+
+func shoutMe(shout GiveAway) {
+    fmt.Println(shout.loud + shout.louder + shout.loudest)
+}
+
+func main() {
+    var shout GiveAway
+    shout.loud = "Me"
+		shout.louder = "eee"
+    shout.loudest = "eeeeee"
+		count := 10
+		// s := shoutMe(shout)
+		for index := 0; index < count; index++ {
+			fmt.Printf("%d - ", index+1)
+			shoutMe(shout)
+		}
+}
+
+
+
+// import (
+// 	"fmt"
+// //	"strings"
+// 	"net/http"
+// )
+//
+//
+// func main()  {
+// 	_, x := http.Get("www.uci.edu")
+// 	fmt.Println(x)
+// }
 
 // func main() {
 //   s := make([]int, 0, 3)
